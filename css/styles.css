@@ -2,3 +2,58 @@ body {
     background-color: #192f5e;
     font-family: sans-serif;
 }
+
+.inner-container {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+section {
+    padding: 50px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+section p {
+    font-size: 28px;
+    color: #d5e294;
+    border-bottom: 2px solid #d5e294;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+section h2 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.gallery {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    
+}
+span {
+    background-color: #87a6ab;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    /* Positition the span over top of the image and take it out of the flow of the doc */
+    position: absolute;
+    /* the top, right, bottom and left values positions this in relation to the viewport, UNLESS the parent container is relativily positioned element */
+    top: -20px;
+    right: -10px;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+@media screen and (min-width:800px) {
+    .gallery {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
